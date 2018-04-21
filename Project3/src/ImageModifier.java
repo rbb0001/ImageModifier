@@ -75,7 +75,7 @@ public class ImageModifier {
 		Color[][] image = ImageUtils.cloneArray(img);
 		for (int row = 0; row < image.length; row++) {
 			for(int col = 0; col < (image[row].length/2); col ++) {
-				image[row][col] = image[row][(image.length - 1) - col];
+				image[row][col] = image[row][(image[row].length - 1) - col];
 			}
 		}
 		return image;
